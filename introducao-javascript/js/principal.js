@@ -40,11 +40,16 @@
 		}
 
 		var valorCampoInput = "";
-		var adornos = "O Pedro é gay";
+		var adornos = "Ó Grandioso, maravilhoso, poderoso, precioso, mestre";
+
+		var inputPeso = document.querySelector("#peso ");
 
 		var botaoAdicionar = document.querySelector("#adicionar-paciente");
-		botaoAdicionar.addEventListener("click", function(){
-		    console.log("Oi, cliquei no botão.");
+		botaoAdicionar.addEventListener("click", function(event){
+				
+			inputPeso.value = resposta;
+			inputNome.value = "";
+			event.preventDefault();
 		});
 
 		var inputNome = document.querySelector("#nome");
